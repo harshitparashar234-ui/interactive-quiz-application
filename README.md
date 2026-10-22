@@ -1,5 +1,6 @@
 Interactive Quiz Application
-Application Link -http://127.0.0.1:8877//
+Application Link - 1. http://127.0.0.1:8877//
+                   2. https://interactive-quiz-application-blue.vercel.app/
 
 About the Project
 This project is a simple interactive quiz application developed using HTML, CSS, and JavaScript with the help of Cursor AI.
