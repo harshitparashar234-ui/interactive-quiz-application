@@ -1,0 +1,105 @@
+root {
+    --navy: #0b1f3a;
+    --blue: #123a6b;
+    --blue-mid: #1a4f8c;
+    --gold: #c9a227;
+    --gold-light: #e8c547;
+    --white: #ffffff;
+    --off-white: #f7f4ea;
+    --text: #10243f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top, #1e4d8c 0%, transparent 42%),
+        linear-gradient(180deg, var(--navy) 0%, var(--blue) 55%, #081526 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 64px;
+}
+
+h1 {
+    margin: 0 0 28px;
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 1.85rem;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 12px;
+}
+
+#quiz {
+    width: 100%;
+    max-width: 640px;
+    background: var(--white);
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+    padding: 36px 32px 28px;
+    box-shadow:
+        0 0 0 4px var(--navy),
+        0 18px 40px rgba(8, 21, 38, 0.35);
+}
+
+#question {
+    margin: 0 0 24px;
+    color: var(--navy);
+    font-size: 1.35rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#options button {
+    appearance: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1rem;
+    color: var(--navy);
+    background: var(--off-white);
+    border: 1px solid #d6c98a;
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    padding: 14px 16px;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.12s ease;
+}
+
+#options button:hover,
+#options button:focus-visible {
+    background: var(--blue-mid);
+    color: var(--white);
+    border-color: var(--gold);
+    outline: none;
+    transform: translateX(4px);
+}
+
+#options button:active {
+    background: var(--navy);
+}
+
+#result {
+    margin: 24px 0 0;
+    min-height: 1.4em;
+    color: var(--blue);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border-top: 1px solid var(--gold);
+    padding-top: 16px;
+}
